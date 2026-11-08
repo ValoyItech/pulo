@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Construction Gallery | Pulo Innovation</title>
+
+    <meta name="description" content="Browse the Pulo Innovation project gallery featuring construction work, building developments, civil engineering and infrastructure projects across South Africa.">
+
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#10243a">
+
+    <link rel="canonical" href="https://puloinnovation.co.za/gallery.html">
+    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Pulo Innovation">
+    <meta property="og:locale" content="en_ZA">
+    <meta property="og:title" content="Construction Gallery | Pulo Innovation">
+    <meta property="og:description" content="Explore photographs of Pulo Innovation's construction, building, civil engineering and infrastructure work across South Africa.">
+    <meta property="og:url" content="https://puloinnovation.co.za/gallery.html">
+    <meta property="og:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+    <meta property="og:image:alt" content="Pulo Innovation construction and project gallery">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Construction Gallery | Pulo Innovation">
+    <meta name="twitter:description" content="View Pulo Innovation's construction and infrastructure project photographs.">
+    <meta name="twitter:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== RESET & BASE ===== */
+    :root {
+      --navy: #10243a;
+      --navy2: #173754;
+      --orange: #f5b900;
+      --yellow: #f5b900;
+      --ink: #172433;
+      --muted: #667482;
+      --paper: #f5f7f8;
+      --white: #fff;
+      --line: #e2e7eb;
+      --shadow: 0 18px 50px rgba(16, 36, 58, .10);
+      --radius: 18px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: #fff;
+      line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, textarea, select { font: inherit; }
+    .container { width: min(1160px, calc(100% - 40px)); margin: auto; }
+
+    /* ===== TYPOGRAPHY ===== */
+    h1, h2, h3 { line-height: 1.12; margin: 0 0 18px; color: var(--navy); }
+    h1 { font-size: clamp(2.6rem, 6vw, 5.1rem); letter-spacing: -.045em; color: #fff; margin-top: 20px; }
+    h2 { font-size: clamp(2rem, 4vw, 3.1rem); letter-spacing: -.035em; }
+    h3 { font-size: 1.25rem; }
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-transform: uppercase;
+      letter-spacing: .19em;
+      font-size: .75rem;
+      font-weight: 850;
+      color: #d39b00;
+    }
+    .eyebrow:before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--yellow);
+    }
+
+    /* ===== HEADER & NAV ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255, 255, 255, .96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(226, 231, 235, .8);
+    }
+    .nav-wrap {
+      height: 82px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: .02em;
+      color: #111820;
+      z-index: 101;
+    }
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+      font-size: .92rem;
+      font-weight: 650;
+    }
+    .nav-links a {
+      color: #344657;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      color: #b07b00;
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 19px;
+      border-radius: 7px;
+      background: var(--yellow);
+      color: #111820;
+      font-weight: 800;
+      border: 1px solid var(--yellow);
+      transition: .2s;
+    }
+    .nav-cta:hover {
+      background: #ffd34d;
+      border-color: #ffd34d;
+      transform: translateY(-1px);
+    }
+    .menu-toggle {
+      display: none;
+      border: 0;
+      background: var(--yellow);
+      color: #111820;
+      border-radius: 8px;
+      width: 44px;
+      height: 44px;
+      font-size: 1.4rem;
+      cursor: pointer;
+      z-index: 101;
+    }
+
+    /* ===== PAGE HERO ===== */
+    .page-hero {
+      position: relative;
+      color: #fff;
+      padding: 78px 0;
+      background-image: url('assets/images/gallery/gallery (19).jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      isolation: isolate;
+    }
+    .page-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(110deg, rgba(9, 17, 25, .94), rgba(9, 17, 25, .72));
+    }
+    .page-hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      margin: 14px 0;
+      color: #fff;
+    }
+    .page-hero p {
+      max-width: 690px;
+      color: #d7e0e7;
+      font-size: 1.05rem;
+      margin: 0;
+    }
+    .breadcrumb {
+      font-size: .82rem;
+      color: #9eb0bf;
+      margin-bottom: 20px;
+    }
+    .breadcrumb a {
+      color: var(--yellow);
+    }
+
+    /* ===== SECTIONS ===== */
+    .section {
+      padding: 88px 0;
+    }
+    .section-soft {
+      background: var(--paper);
+    }
+    .section-head {
+      max-width: 720px;
+      margin-bottom: 38px;
+    }
+    .section-head p {
+      font-size: 1.06rem;
+      color: var(--muted);
+    }
+
+    /* Filters */
+    .filters {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin: 0 0 28px;
+    }
+    .filter-btn {
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #536270;
+      padding: 9px 15px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: .84rem;
+      transition: .2s;
+    }
+    .filter-btn.active, .filter-btn:hover {
+      background: #111820;
+      border-color: #111820;
+      color: #fff;
+    }
+
+    /* ===== GALLERY GRID ===== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .gallery-item {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #e2e7eb;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+    }
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .4s ease;
+    }
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+    .gallery-item::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 25, 41, 0.4);
+      opacity: 0;
+      transition: opacity .3s ease;
+      z-index: 1;
+    }
+    .gallery-item:hover::after {
+      opacity: 1;
+    }
+    .gallery-icon {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2rem;
+      opacity: 0;
+      z-index: 2;
+      transition: opacity .3s ease;
+    }
+    .gallery-item:hover .gallery-icon {
+      opacity: 1;
+    }
+
+    /* ===== PAGINATION ===== */
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin-top: 40px;
+    }
+    .page-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 40px;
+      height: 40px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: var(--ink);
+      border-radius: 7px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: .2s;
+    }
+    .page-btn:hover:not(:disabled), .page-btn.active {
+      background: var(--yellow);
+      border-color: var(--yellow);
+      color: #111820;
+    }
+    .page-btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* ===== VIDEO SECTION ===== */
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+    .video-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 7px 24px rgba(16, 36, 58, .045);
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+      height: 0;
+      background: #000;
+    }
+    .video-wrapper video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .video-info {
+      padding: 16px 20px;
+    }
+    .video-info h3 {
+      font-size: 1.1rem;
+      margin-bottom: 4px;
+    }
+    .video-info p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    /* CTA Band */
+    .cta-band {
+      background: var(--yellow);
+      padding: 48px 0;
+    }
+    .cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+    .cta-inner h2 {
+      font-size: clamp(1.8rem, 3vw, 2.5rem);
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+    .cta-inner p {
+      margin: 0;
+      color: #3b3429;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 12px 19px;
+      border-radius: 7px;
+      background: var(--yellow);
+      color: #111820;
+      font-weight: 800;
+      border: 1px solid var(--yellow);
+      transition: .2s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #ffd34d;
+      border-color: #ffd34d;
+      transform: translateY(-1px);
+    }
+    .cta-inner .btn {
+      background: var(--navy);
+      border-color: var(--navy);
+      color: #fff;
+    }
+    .cta-inner .btn:hover {
+      background: #1a2f45;
+      border-color: #1a2f45;
+    }
+
+    /* ===== LIGHTBOX MODAL ===== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .lightbox.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .lightbox-img {
+      max-width: 90%;
+      max-height: 85vh;
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      transform: scale(0.95);
+      transition: transform 0.3s ease;
+    }
+    .lightbox.show .lightbox-img {
+      transform: scale(1);
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: #fff;
+      font-size: 2.5rem;
+      cursor: pointer;
+      background: none;
+      border: none;
+      z-index: 10000;
+    }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 2.5rem;
+      cursor: pointer;
+      background: rgba(0,0,0,0.5);
+      border: none;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+    .lightbox-nav:hover {
+      background: rgba(255,255,255,0.2);
+    }
+    .lightbox-prev { left: 20px; }
+    .lightbox-next { right: 20px; }
+    .lightbox-counter {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      background: rgba(0,0,0,0.5);
+      padding: 5px 15px;
+      border-radius: 20px;
+    }
+
+    /* ===== FOOTER ===== */
+    .site-footer {
+      background: #091827;
+      color: #c5d0d9;
+      padding: 55px 0 22px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 45px;
+    }
+    .site-footer h3 {
+      color: #fff;
+      font-size: 1rem;
+    }
+    .site-footer p, .site-footer a {
+      font-size: .88rem;
+      color: #aebbc6;
+    }
+    .site-footer a:hover {
+      color: var(--orange);
+    }
+    .footer-links {
+      display: grid;
+      gap: 9px;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, .12);
+      margin-top: 40px;
+      padding-top: 18px;
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      font-size: .78rem;
+      color: #8999a7;
+    }
+    .footer-brand-logo {
+      height: 80px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      margin-bottom: 8px;
+    }
+
+    /* ===== MOBILE SIDEBAR ===== */
+    .menu-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(4, 12, 20, .62);
+      z-index: 90;
+      opacity: 0;
+      visibility: hidden;
+      transition: .25s;
+    }
+    .menu-overlay.show {
+      opacity: 1;
+      visibility: visible;
+    }
+    .sidebar-brand, .sidebar-close, .sidebar-logo, .sidebar-cta {
+      display: none;
+    }
+    .nav-links a i {
+      display: none;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width: 900px) {
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: .84rem; }
+      .nav-cta { display: none; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .video-grid { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media(max-width: 680px) {
+      .container { width: min(100% - 30px, 1160px); }
+      .nav-wrap { height: 70px; }
+      .menu-toggle { display: block; }
+      .nav-links {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: auto;
+        bottom: 0;
+        width: min(84vw, 350px);
+        height: 100dvh;
+        padding: 100px 26px 28px;
+        background: #111820;
+        color: #fff;
+        box-shadow: -18px 0 50px rgba(0, 0, 0, .25);
+        z-index: 110;
+        transform: translateX(110%);
+        transition: transform .3s ease;
+        visibility: hidden;
+        overflow-y: auto;
+        align-items: stretch;
+        gap: 0;
+        border: 0;
+        flex-direction: column;
+        opacity: 1 !important; 
+      }
+      .nav-links.open {
+        transform: translateX(0);
+        visibility: visible;
+      }
+      .nav-links a {
+        color: #f8fafc;
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
+        padding: 16px 2px;
+        font-size: 1.05rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+      .nav-links a i {
+        display: inline-block;
+        width: 20px;
+        text-align: center;
+        color: var(--yellow);
+        font-size: 1.1rem;
+      }
+      .nav-links a.active, .nav-links a:hover {
+        color: var(--yellow);
+      }
+      .sidebar-logo {
+        display: block;
+        position: absolute;
+        top: 22px;
+        left: 24px;
+        height: 44px;
+        width: auto;
+      }
+      .sidebar-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: 1px solid rgba(255, 255, 255, .3);
+        background: transparent;
+        color: #fff;
+        width: 38px;
+        height: 38px;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        cursor: pointer;
+      }
+      .sidebar-cta {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        margin-bottom: 20px;
+        padding: 14px 20px;
+        border-radius: 7px;
+        background: var(--yellow);
+        color: #111820 !important;
+        font-weight: 800;
+        border: 1px solid var(--yellow);
+        font-size: 1rem;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      .sidebar-cta:hover {
+        background: #ffd34d;
+        color: #111820 !important;
+      }
+      .section { padding: 65px 0; }
+      
+      .gallery-grid { grid-template-columns: 1fr; }
+
+      .cta-inner { align-items: flex-start; flex-direction: column; }
+      .footer-grid { grid-template-columns: 1fr; gap: 28px; }
+      .footer-bottom { flex-direction: column; }
+      
+      .lightbox-nav { width: 40px; height: 40px; font-size: 1.5rem; }
+      .lightbox-prev { left: 10px; }
+      .lightbox-next { right: 10px; }
+    }
+    @media(min-width: 681px) {
+      .sidebar-brand, .sidebar-close, .sidebar-logo, .sidebar-cta { display: none; }
+    }
+
+    /* AOS fallback */
+    [data-aos] {
+      transition-property: opacity, transform;
+    }
+    @media(prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *:before, *:after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">
+        <img src="assets/images/logo.png" alt="Pulo Innovation logo" class="brand-logo">
+      </a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links" id="site-navigation">
+        <img src="assets/images/white.png" alt="Pulo Innovation logo" class="sidebar-logo">
+        <button class="sidebar-close" type="button" aria-label="Close menu">×</button>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        <a href="services.html"><i class="fas fa-hard-hat"></i> Services</a>
+        <a href="projects.html"><i class="fas fa-project-diagram"></i> Projects</a>
+        <a href="gallery.html" class="active"><i class="fas fa-images"></i> Gallery</a>
+        <a href="credentials.html"><i class="fas fa-certificate"></i> Credentials</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="contact.html" class="sidebar-cta">Request a quote&nbsp; →</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Request a quote&nbsp; →</a>
+    </div>
+  </header>
+  <div class="menu-overlay" aria-hidden="true"></div>
+
+  <main>
+    <!-- ===== PAGE HERO ===== -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="breadcrumb"><a href="index.html">Home</a> / Gallery</div>
+        <span class="eyebrow">Project gallery</span>
+        <h1>See our work<br>in progress and complete.</h1>
+        <p>A visual showcase of construction, infrastructure and project environments.</p>
+      </div>
+    </section>
+
+    <!-- ===== IMAGE GALLERY SECTION ===== -->
+    <section class="section" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Photo showcase</span>
+          <h2>Projects in pictures</h2>
+          <p>Browse the visual categories below.</p>
+        </div>
+
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">All Images</button>
+          <button class="filter-btn" data-filter="building">Building</button>
+          <button class="filter-btn" data-filter="civil">Civil Engineering</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Gallery items will be injected here by JS -->
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="pagination" id="pagination">
+          <!-- Pagination buttons will be injected here by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== VIDEO GALLERY SECTION ===== -->
+    <section class="section section-soft" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Video showcase</span>
+          <h2>Site action in motion</h2>
+          <p>Watch our teams at work across different project sites.</p>
+        </div>
+
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Site Preparation</h3>
+              <p>Initial groundwork and excavation activities.</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Concrete Pouring</h3>
+              <p>Structural foundation work in progress.</p>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (3).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Road Construction</h3>
+              <p>Civil engineering machinery at work.</p>
+            </div>
+          </div>
+
+          <!-- Video 4 -->
+          <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (4).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Project Walkthrough</h3>
+              <p>Overview of a completed site area.</p>
+            </div>
+          </div>
+          
+           <!-- Video 5 -->
+           <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (5).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Team in Action</h3>
+              <p>Skilled personnel on site.</p>
+            </div>
+          </div>
+
+           <!-- Video 6 -->
+           <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (6).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Heavy Machinery</h3>
+              <p>Equipment operating on a civil site.</p>
+            </div>
+          </div>
+          
+           <!-- Video 7 -->
+           <div class="video-card">
+            <div class="video-wrapper">
+              <video controls preload="metadata">
+                <source src="assets/images/gallery/videos (7).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-info">
+              <h3>Site Progress Update</h3>
+              <p>General overview of ongoing work.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== LIGHTBOX MODAL ===== -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="Enlarged image" class="lightbox-img" id="lightbox-img">
+    <button class="lightbox-nav lightbox-next" id="lightbox-next"><i class="fas fa-chevron-right"></i></button>
+    <div class="lightbox-counter" id="lightbox-counter">1 / 12</div>
+  </div>
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band">
+    <div class="container cta-inner">
+      <div>
+        <h2>Have a project in mind?</h2>
+        <p>Talk to our team about your building or civil construction requirements.</p>
+      </div>
+      <a class="btn" href="contact.html">Discuss your project&nbsp; →</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <img src="assets/images/white.png" alt="Pulo Innovation logo" class="footer-brand-logo">
+          </a>
+          <p style="max-width:360px;margin-top:20px">A South African building and civil construction company established in 2017, focused on quality service delivery, professional standards and lasting client relationships.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <div class="footer-links">
+            <a href="about.html">About the company</a>
+            <a href="services.html">Our services</a>
+            <a href="projects.html">Project portfolio</a>
+            <a href="credentials.html">Company credentials</a>
+          </div>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <div class="footer-links">
+            <a href="tel:+27726927161">072 692 7161</a>
+            <a href="mailto:atang@puloinnovation.co.za">atang@puloinnovation.co.za</a>
+            <span>55 Oak Hill, 2 Augrabies Street, Mooikloof Ridge, Pretoria, 0001</span>
+            <span>310 Moeletsi Crescent, Eureka Park, Virginia, 9430</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Pulo Innovation (Pty) Ltd. All rights reserved.</span>
+        <span>Building &amp; Civil Construction</span>
+      </div>
+    </div>
+  </footer>
+
+   <!-- ===== SCRIPTS ===== -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile menu
+      const toggle = document.querySelector('.menu-toggle');
+      const nav = document.querySelector('.nav-links');
+      const overlay = document.querySelector('.menu-overlay');
+      const close = document.querySelector('.sidebar-close');
+
+      const openMenu = () => {
+        if (!nav) return;
+        nav.classList.add('open');
+        overlay?.classList.add('show');
+        toggle?.setAttribute('aria-expanded', 'true');
+        toggle.textContent = '×';
+        document.body.style.overflow = 'hidden';
+      };
+      const closeMenu = () => {
+        if (!nav) return;
+        nav.classList.remove('open');
+        overlay?.classList.remove('show');
+        toggle?.setAttribute('aria-expanded', 'false');
+        if (toggle) toggle.textContent = '☰';
+        document.body.style.overflow = '';
+      };
+
+      toggle?.addEventListener('click', () => nav?.classList.contains('open') ? closeMenu() : openMenu());
+      close?.addEventListener('click', closeMenu);
+      overlay?.addEventListener('click', closeMenu);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+
+      // ===== GALLERY PAGINATION LOGIC =====
+      
+      // Array of all gallery images. 
+      // Reordered: Action shots (13-87) first, team member photos (1-12) last.
+      const allImages = [
+        { src: 'assets/images/gallery/gallery (13).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (14).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (15).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (16).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (17).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (18).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (19).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (20).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (21).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (22).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (23).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (24).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (25).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (26).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (27).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (28).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (29).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (30).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (31).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (32).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (33).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (34).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (35).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (36).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (37).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (38).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (39).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (49).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (50).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (51).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (52).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (53).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (54).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (55).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (56).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (57).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (58).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (59).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (60).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (61).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (62).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (63).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (64).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (65).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (66).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (67).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (68).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (69).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (70).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (71).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (72).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (73).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (74).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (75).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (76).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (77).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (78).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (79).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (80).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (81).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (82).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (83).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (84).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (85).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (86).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (87).jpeg', category: 'civil' },
+        // Team member photos moved to the end
+        { src: 'assets/images/gallery/gallery (1).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (2).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (3).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (4).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (5).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (6).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (7).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (8).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (9).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (10).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (11).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (12).jpeg', category: 'civil' }
+      ];
+
+      const grid = document.getElementById('gallery-grid');
+      const paginationContainer = document.getElementById('pagination');
+      const filterBtns = document.querySelectorAll('.filter-btn');
+
+      let currentPage = 1;
+      const itemsPerPage = 12; 
+      let currentFilter = 'all';
+      let currentPaginatedImages = []; // Keep track of currently visible images for lightbox
+
+      // Lightbox Elements
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+      const lightboxPrev = document.getElementById('lightbox-prev');
+      const lightboxNext = document.getElementById('lightbox-next');
+      const lightboxCounter = document.getElementById('lightbox-counter');
+      let currentImageIndex = 0;
+
+      function renderGallery() {
+        const filteredImages = currentFilter === 'all' 
+          ? allImages 
+          : allImages.filter(img => img.category === currentFilter);
+
+        const totalItems = filteredImages.length;
+        const totalPages = Math.ceil(totalItems / itemsPerPage);
+        
+        if (currentPage > totalPages) currentPage = totalPages || 1;
+        
+        const startIndex = (currentPage - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        
+        currentPaginatedImages = filteredImages.slice(startIndex, endIndex);
+
+        grid.innerHTML = '';
+        if (currentPaginatedImages.length === 0) {
+          grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--muted);">No images found for this category.</p>';
+        } else {
+          currentPaginatedImages.forEach((imgObj, index) => {
+            const div = document.createElement('div');
+            div.className = 'gallery-item';
+            div.innerHTML = `
+              <img src="${imgObj.src}" alt="Project gallery image" loading="lazy">
+              <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
+            `;
+            // Add click event to open lightbox
+            div.addEventListener('click', () => openLightbox(index));
+            grid.appendChild(div);
+          });
+        }
+
+        renderPagination(totalPages);
+      }
+
+      function renderPagination(totalPages) {
+        paginationContainer.innerHTML = '';
+        if (totalPages <= 1) return;
+
+        const prevBtn = document.createElement('button');
+        prevBtn.className = 'page-btn';
+        prevBtn.innerHTML = '<i class="fas fa-chevron-left"></i>';
+        prevBtn.disabled = currentPage === 1;
+        prevBtn.addEventListener('click', () => {
+          if (currentPage > 1) {
+            currentPage--;
+            renderGallery();
+            scrollToTopOfGallery();
+          }
+        });
+        paginationContainer.appendChild(prevBtn);
+
+        for (let i = 1; i <= totalPages; i++) {
+          const btn = document.createElement('button');
+          btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+          btn.textContent = i;
+          btn.addEventListener('click', () => {
+            currentPage = i;
+            renderGallery();
+            scrollToTopOfGallery();
+          });
+          paginationContainer.appendChild(btn);
+        }
+
+        const nextBtn = document.createElement('button');
+        nextBtn.className = 'page-btn';
+        nextBtn.innerHTML = '<i class="fas fa-chevron-right"></i>';
+        nextBtn.disabled = currentPage === totalPages;
+        nextBtn.addEventListener('click', () => {
+          if (currentPage < totalPages) {
+            currentPage++;
+            renderGallery();
+            scrollToTopOfGallery();
+          }
+        });
+        paginationContainer.appendChild(nextBtn);
+      }
+
+      function scrollToTopOfGallery() {
+        const gallerySection = document.querySelector('.section');
+        gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+
+      // ===== LIGHTBOX LOGIC =====
+      function openLightbox(index) {
+        currentImageIndex = index;
+        updateLightboxImage();
+        lightbox.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('show');
+        document.body.style.overflow = ''; // Restore scrolling
+      }
+
+      function updateLightboxImage() {
+        if (currentPaginatedImages.length === 0) return;
+        
+        const imgObj = currentPaginatedImages[currentImageIndex];
+        lightboxImg.src = imgObj.src;
+        lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentPaginatedImages.length}`;
+        
+        // Disable buttons if only one image
+        lightboxPrev.style.display = currentPaginatedImages.length > 1 ? 'flex' : 'none';
+        lightboxNext.style.display = currentPaginatedImages.length > 1 ? 'flex' : 'none';
+      }
+
+      function nextImage() {
+        if (currentPaginatedImages.length <= 1) return;
+        currentImageIndex = (currentImageIndex + 1) % currentPaginatedImages.length;
+        updateLightboxImage();
+      }
+
+      function prevImage() {
+        if (currentPaginatedImages.length <= 1) return;
+        currentImageIndex = (currentImageIndex - 1 + currentPaginatedImages.length) % currentPaginatedImages.length;
+        updateLightboxImage();
+      }
+
+      // Lightbox Event Listeners
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightboxNext.addEventListener('click', nextImage);
+      lightboxPrev.addEventListener('click', prevImage);
+
+      // Close on background click
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      // Keyboard navigation
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('show')) return;
+        
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+        if (e.key === 'Escape') closeLightbox();
+      });
+
+      // Filter button click logic
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          currentFilter = btn.dataset.filter;
+          currentPage = 1; 
+          renderGallery();
+        });
+      });
+
+      // Initial render
+      renderGallery();
+
+      // AOS init
+      if (window.AOS) {
+        AOS.init({ duration: 750, easing: 'ease-out-cubic', once: true, offset: 70 });
+      }
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
