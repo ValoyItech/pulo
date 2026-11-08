@@ -5,29 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Pulo Innovation | Construction & Engineering</title>
 
-    <meta name="description" content="Get in touch with Pulo Innovation (Pty) Ltd for building construction, civil engineering, solar energy and power infrastructure enquiries across South Africa.">
+  <meta name="description" content="Get in touch with Pulo Innovation (Pty) Ltd for building construction, civil engineering, solar energy and power infrastructure enquiries across South Africa.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#10243a">
 
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#10243a">
+  <link rel="canonical" href="https://puloinnovation.co.za/contact.html">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
 
-    <link rel="canonical" href="https://puloinnovation.co.za/contact.html">
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pulo Innovation">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Contact Pulo Innovation | Construction & Engineering">
+  <meta property="og:description" content="Contact Pulo Innovation for professional building, civil engineering, solar and power infrastructure construction services.">
+  <meta property="og:url" content="https://puloinnovation.co.za/contact.html">
+  <meta property="og:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+  <meta property="og:image:alt" content="Pulo Innovation construction and infrastructure services">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Pulo Innovation">
-    <meta property="og:locale" content="en_ZA">
-    <meta property="og:title" content="Contact Pulo Innovation | Construction & Engineering">
-    <meta property="og:description" content="Contact Pulo Innovation for professional building, civil engineering, solar and power infrastructure construction services.">
-    <meta property="og:url" content="https://puloinnovation.co.za/contact.html">
-    <meta property="og:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
-    <meta property="og:image:alt" content="Pulo Innovation construction and infrastructure services">
-
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Contact Pulo Innovation | Construction & Engineering">
-    <meta name="twitter:description" content="Get in touch with Pulo Innovation for construction and engineering enquiries.">
-    <meta name="twitter:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact Pulo Innovation | Construction & Engineering">
+  <meta name="twitter:description" content="Get in touch with Pulo Innovation for construction and engineering enquiries.">
+  <meta name="twitter:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
 
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -48,7 +47,7 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-        html, body {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
@@ -282,10 +281,22 @@
       min-height: 140px;
       resize: vertical;
     }
-    .form-note {
-      font-size: .78rem;
-      color: var(--muted);
-      margin-top: 12px;
+    
+    /* Form Action Buttons */
+    .form-actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .btn-whatsapp {
+      background: #25D366;
+      border-color: #25D366;
+      color: #fff;
+    }
+    .btn-whatsapp:hover {
+      background: #1ebe5d;
+      border-color: #1ebe5d;
     }
 
     /* ===== MAPS SECTION ===== */
@@ -549,6 +560,13 @@
       .contact-card, .contact-form {
         padding: 24px;
       }
+      
+      .form-actions {
+        flex-direction: column;
+      }
+      .form-actions button {
+        width: 100%;
+      }
 
       .cta-inner { align-items: flex-start; flex-direction: column; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -640,7 +658,7 @@
 
         <div class="contact-form">
           <h2 style="font-size:1.8rem">Send an enquiry</h2>
-          <p style="color:var(--muted);margin-top:-8px">Complete the form and your email application will open with the enquiry details.</p>
+          <p style="color:var(--muted);margin-top:-8px">Complete the form and choose to send via Email or WhatsApp.</p>
           
           <form id="enquiry-form">
             <div class="form-grid">
@@ -667,10 +685,9 @@
               <select id="service" name="service">
                 <option>General Building Works</option>
                 <option>Civil Engineering</option>
-                <option>Alternative Building Technology</option>
-                <option>Leak Detection and Surveys</option>
-                <option>Electrical Engineering</option>
-                <option>Waterproofing</option>
+                <option>Solar & Power Infrastructure</option>
+                <option>Plant Hire</option>
+                <option>Waterproofing & Leak Detection</option>
                 <option>Other / General enquiry</option>
               </select>
             </div>
@@ -680,8 +697,10 @@
               <textarea id="message" name="message" required></textarea>
             </div>
             
-            <button class="btn" type="submit">Prepare email enquiry&nbsp; →</button>
-            <p class="form-note">This static HTML form does not store submissions on a server. A PHP form handler can be added when the website is deployed.</p>
+            <div class="form-actions">
+              <button class="btn" type="button" id="btn-email"><i class="fas fa-envelope"></i> Send via Email</button>
+              <button class="btn btn-whatsapp" type="button" id="btn-whatsapp"><i class="fab fa-whatsapp"></i> Send via WhatsApp</button>
+            </div>
           </form>
         </div>
       </div>
@@ -808,24 +827,69 @@
       overlay?.addEventListener('click', closeMenu);
       document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
-      // Form submission (mailto)
+      // ===== FORM SUBMISSION LOGIC =====
       const form = document.querySelector('#enquiry-form');
-      if (form) {
-        form.addEventListener('submit', e => {
-          e.preventDefault();
-          const d = new FormData(form);
-          const subject = encodeURIComponent('Website enquiry - Pulo Innovation');
-          const body = encodeURIComponent(
-            `Name: ${d.get('name')}\n` +
-            `Company: ${d.get('company')}\n` +
-            `Email: ${d.get('email')}\n` +
-            `Telephone: ${d.get('phone')}\n` +
-            `Service: ${d.get('service')}\n\n` +
-            `Message:\n${d.get('message')}`
-          );
-          window.location.href = `mailto:atang@puloinnovation.co.za?subject=${subject}&body=${body}`;
-        });
-      }
+      const btnEmail = document.querySelector('#btn-email');
+      const btnWhatsApp = document.querySelector('#btn-whatsapp');
+
+      const getFormData = () => {
+        const d = new FormData(form);
+        return {
+          name: d.get('name'),
+          company: d.get('company'),
+          email: d.get('email'),
+          phone: d.get('phone'),
+          service: d.get('service'),
+          message: d.get('message')
+        };
+      };
+
+      const validateForm = () => {
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return false;
+        }
+        return true;
+      };
+
+      // Email Submission
+      btnEmail.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        const data = getFormData();
+        const subject = encodeURIComponent('Website enquiry - Pulo Innovation');
+        const body = encodeURIComponent(
+          `Name: ${data.name}\n` +
+          `Company: ${data.company}\n` +
+          `Email: ${data.email}\n` +
+          `Telephone: ${data.phone}\n` +
+          `Service: ${data.service}\n\n` +
+          `Message:\n${data.message}`
+        );
+        window.location.href = `mailto:atang@puloinnovation.co.za?subject=${subject}&body=${body}`;
+      });
+
+      // WhatsApp Submission
+      btnWhatsApp.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (!validateForm()) return;
+
+        const data = getFormData();
+        const waNumber = '27726927161'; // South African number without the + sign
+        const text = encodeURIComponent(
+          `*New Website Enquiry*\n\n` +
+          `*Name:* ${data.name}\n` +
+          `*Company:* ${data.company || 'N/A'}\n` +
+          `*Email:* ${data.email}\n` +
+          `*Telephone:* ${data.phone || 'N/A'}\n` +
+          `*Service:* ${data.service}\n\n` +
+          `*Message:*\n${data.message}`
+        );
+        
+        // Opens WhatsApp app on mobile or WhatsApp Web on desktop
+        window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
+      });
 
       // AOS init
       if (window.AOS) {
