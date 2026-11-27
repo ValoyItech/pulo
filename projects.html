@@ -332,6 +332,28 @@
       gap: 13px;
     }
 
+    /* Gallery Link on Cards */
+    .gallery-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 16px;
+      font-weight: 700;
+      font-size: .88rem;
+      color: #b07b00;
+      transition: gap .2s;
+    }
+    .gallery-link i {
+      font-size: .8rem;
+      transition: transform .2s;
+    }
+    .project-card:hover .gallery-link {
+      gap: 12px;
+    }
+    .project-card:hover .gallery-link i {
+      transform: translateX(3px);
+    }
+
     /* CTA Band */
     .cta-band {
       background: var(--yellow);
@@ -652,6 +674,7 @@
               <div class="project-meta">Civil & Solar</div>
               <h3>Virginia Solar Project 2024</h3>
               <p>Trenching, cable laying, and construction of PTS Power Transformer Foundations (reinforced concrete with steel reinforcement).</p>
+              <a href="gallery.html#virginia" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -665,6 +688,7 @@
               <div class="project-meta">General building</div>
               <h3>Vhembe TVET College</h3>
               <p>Construction of classrooms at Tshisimani Campus.</p>
+              <a href="gallery.html" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -677,56 +701,76 @@
               <div class="project-meta">General building</div>
               <h3>RDL Medical Centre</h3>
               <p>Construction of a medical centre in Pretoria.</p>
+              <a href="gallery.html" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="card project-card" data-category="building" data-aos="fade-up" data-aos-duration="650">
             <div class="project-image">
-              <img src="assets/images/school.jpeg" alt="Commercial building" loading="lazy">
+              <img src="assets/images/mfesani.jpeg" alt="Commercial building" loading="lazy">
               <span>Commercial</span>
             </div>
             <div class="card-body">
               <div class="project-meta">General building</div>
               <h3>Mfesane Secondary School</h3>
               <p>Construction of Mfesane Secondary School.</p>
+              <a href="gallery.html#mfesane" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="card project-card" data-category="building" data-aos="fade-up" data-aos-duration="650">
             <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80" alt="Commercial building" loading="lazy">
+              <img src="assets/images/lower.jpeg" alt="Commercial building" loading="lazy">
               <span>Commercial</span>
             </div>
             <div class="card-body">
               <div class="project-meta">General building</div>
               <h3>Lower Umfolozi Social Development Offices</h3>
               <p>Upgrade and additions to social development offices.</p>
+              <a href="gallery.html#umfolozi" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="card project-card" data-category="building" data-aos="fade-up" data-aos-duration="650">
             <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=800&q=80" alt="Housing project" loading="lazy">
+              <img src="assets/images/housing.jpeg" alt="Housing project" loading="lazy">
               <span>Housing</span>
             </div>
             <div class="card-body">
               <div class="project-meta">General building</div>
               <h3>Blue Downs Forest Village Housing</h3>
               <p>Construction of 89 housing units.</p>
+              <a href="gallery.html#bluedowns" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
           <div class="card project-card" data-category="building" data-aos="fade-up" data-aos-duration="650">
             <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80" alt="Switching stations" loading="lazy">
+              <img src="assets/images/switching.jpeg" alt="Switching stations" loading="lazy">
               <span>Infrastructure</span>
             </div>
             <div class="card-body">
               <div class="project-meta">General building</div>
               <h3>Orchards & Hill Campus Switching Stations</h3>
               <p>Construction of switching stations.</p>
+              <a href="gallery.html#orchards" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
+
+
+          <!-- Mokibe Primary School -->
+<div class="card" data-aos="fade-up" data-aos-duration="650">
+  <div class="project-image">
+    <img src="assets/images/mokibe.jpeg" alt="Mokibe Primary School in Witbank" loading="lazy">
+    <span>Education</span>
+  </div>
+  <div class="card-body">
+    <div class="project-meta">General building</div>
+    <h3>Mokibe Primary School</h3>
+    <p>Construction of primary school facilities in Witbank, Mpumalanga.</p>
+    <a href="gallery.html#mokibe" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
+  </div>
+</div>
 
           <div class="card project-card" data-category="building" data-aos="fade-up" data-aos-duration="650">
             <div class="project-image">
@@ -737,6 +781,7 @@
               <div class="project-meta">General building</div>
               <h3>Enkululekweni Primary School</h3>
               <p>Construction of primary school facilities.</p>
+              <a href="gallery.html#enkululekweni" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -750,6 +795,7 @@
               <div class="project-meta">Civil engineering</div>
               <h3>Muyexe Village Road Upgrade</h3>
               <p>Upgrade of 4.8 km of road from gravel to bituminous surface.</p>
+              <a href="gallery.html" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -762,6 +808,7 @@
               <div class="project-meta">Civil engineering</div>
               <h3>Central University Sportsfields</h3>
               <p>Construction of sportsfields in Free State.</p>
+              <a href="gallery.html" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
 
@@ -774,6 +821,7 @@
               <div class="project-meta">Civil engineering</div>
               <h3>Chris Hani Fresh Produce Packhouse</h3>
               <p>Construction of fresh produce packhouse.</p>
+              <a href="gallery.html" class="gallery-link">View gallery <i class="fas fa-arrow-right"></i></a>
             </div>
           </div>
         </div>

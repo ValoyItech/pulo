@@ -5,29 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construction Gallery | Pulo Innovation</title>
 
-    <meta name="description" content="Browse the Pulo Innovation project gallery featuring construction work, building developments, civil engineering and infrastructure projects across South Africa.">
+  <meta name="description" content="Browse the Pulo Innovation project gallery featuring construction work, building developments, civil engineering and infrastructure projects across South Africa.">
 
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#10243a">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#10243a">
 
-    <link rel="canonical" href="https://puloinnovation.co.za/gallery.html">
-    <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <link rel="canonical" href="https://puloinnovation.co.za/gallery.html">
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Pulo Innovation">
-    <meta property="og:locale" content="en_ZA">
-    <meta property="og:title" content="Construction Gallery | Pulo Innovation">
-    <meta property="og:description" content="Explore photographs of Pulo Innovation's construction, building, civil engineering and infrastructure work across South Africa.">
-    <meta property="og:url" content="https://puloinnovation.co.za/gallery.html">
-    <meta property="og:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
-    <meta property="og:image:alt" content="Pulo Innovation construction and project gallery">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Pulo Innovation">
+  <meta property="og:locale" content="en_ZA">
+  <meta property="og:title" content="Construction Gallery | Pulo Innovation">
+  <meta property="og:description" content="Explore photographs of Pulo Innovation's construction, building, civil engineering and infrastructure work across South Africa.">
+  <meta property="og:url" content="https://puloinnovation.co.za/gallery.html">
+  <meta property="og:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+  <meta property="og:image:alt" content="Pulo Innovation construction and project gallery">
 
-    <!-- Twitter / X -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Construction Gallery | Pulo Innovation">
-    <meta name="twitter:description" content="View Pulo Innovation's construction and infrastructure project photographs.">
-    <meta name="twitter:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Construction Gallery | Pulo Innovation">
+  <meta name="twitter:description" content="View Pulo Innovation's construction and infrastructure project photographs.">
+  <meta name="twitter:image" content="https://puloinnovation.co.za/assets/images/hero11.jpeg">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
@@ -47,19 +47,19 @@
     }
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
-        html, body {
+    html, body {
       margin: 0;
       padding: 0;
       width: 100%;
       max-width: 100vw;
-      overflow-x: hidden; /* Forces the whole document to hide horizontal overflow */
+      overflow-x: hidden;
     }
     body {
       font-family: Inter, Arial, Helvetica, sans-serif;
       color: var(--ink);
       background: #fff;
       line-height: 1.6;
-      position: relative; /* Ensures absolute children stay inside */
+      position: relative;
     }
     a { color: inherit; text-decoration: none; }
     img { max-width: 100%; display: block; }
@@ -217,6 +217,20 @@
       color: var(--muted);
     }
 
+    /* Project Badge */
+    .project-badge {
+      display: inline-block;
+      background: var(--navy);
+      color: var(--yellow);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
     /* Filters */
     .filters {
       display: flex;
@@ -255,13 +269,13 @@
       aspect-ratio: 4 / 3;
       cursor: pointer;
     }
-    .gallery-item img {
+    .gallery-item img, .gallery-item video {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transition: transform .4s ease;
     }
-    .gallery-item:hover img {
+    .gallery-item:hover img, .gallery-item:hover video {
       transform: scale(1.05);
     }
     .gallery-item::after {
@@ -272,6 +286,7 @@
       opacity: 0;
       transition: opacity .3s ease;
       z-index: 1;
+      pointer-events: none;
     }
     .gallery-item:hover::after {
       opacity: 1;
@@ -287,6 +302,7 @@
       opacity: 0;
       z-index: 2;
       transition: opacity .3s ease;
+      pointer-events: none;
     }
     .gallery-item:hover .gallery-icon {
       opacity: 1;
@@ -660,7 +676,7 @@
       }
       .section { padding: 65px 0; }
       
-      .gallery-grid { grid-template-columns: 1fr; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
 
       .cta-inner { align-items: flex-start; flex-direction: column; }
       .footer-grid { grid-template-columns: 1fr; gap: 28px; }
@@ -725,12 +741,239 @@
       </div>
     </section>
 
-    <!-- ===== IMAGE GALLERY SECTION ===== -->
-    <section class="section" data-aos="fade-up" data-aos-duration="750">
+    <!-- ===== VIRGINIA SOLAR PROJECT ===== -->
+    <section id="virginia" class="section" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Civil &amp; Solar</span>
+          <h2>Virginia Solar Project 2024</h2>
+          <p>Trenching, cable laying, and construction of PTS Power Transformer Foundations.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/1.jpeg" alt="Virginia solar project – trenching and cable laying" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/2.jpeg" alt="Virginia solar project – PTS foundation works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/3.jpeg" alt="Virginia solar project – civil construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/4.jpeg" alt="Virginia solar project – cable installation" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/5.jpeg" alt="Virginia solar project – site progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/6.jpeg" alt="Virginia solar project – foundation construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/7.jpeg" alt="Virginia solar project – transformer base" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/8.jpeg" alt="Virginia solar project – civil works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/9.jpeg" alt="Virginia solar project – trenching detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/10.jpeg" alt="Virginia solar project – construction team" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/11.jpeg" alt="Virginia solar project – site overview" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/12.jpeg" alt="Virginia solar project – foundation completion" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/13.jpeg" alt="Virginia solar project – PTS works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/14.jpeg" alt="Virginia solar project – cable laying progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/virginia/15.jpeg" alt="Virginia solar project – completed foundation" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MFESANE SECONDARY SCHOOL ===== -->
+    <section id="mfesane" class="section section-soft" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Building</span>
+          <h2>Mfesane Secondary School</h2>
+          <p>Construction of Mfesane Secondary School facilities.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/1.jpeg" alt="Mfesane Secondary School – construction phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/2.jpeg" alt="Mfesane Secondary School – building progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/3.jpeg" alt="Mfesane Secondary School – structure" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/4.jpeg" alt="Mfesane Secondary School – site view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/5.jpeg" alt="Mfesane Secondary School – classroom block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/6.jpeg" alt="Mfesane Secondary School – construction detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/7.jpeg" alt="Mfesane Secondary School – roofing works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/8.jpeg" alt="Mfesane Secondary School – exterior view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/9.jpeg" alt="Mfesane Secondary School – construction team" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/10.jpeg" alt="Mfesane Secondary School – building works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/11.jpeg" alt="Mfesane Secondary School – progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/12.jpeg" alt="Mfesane Secondary School – site detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/13.jpeg" alt="Mfesane Secondary School – structure complete" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/14.jpeg" alt="Mfesane Secondary School – finishing" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/15.jpeg" alt="Mfesane Secondary School – final view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/16.jpeg" alt="Mfesane Secondary School – completed block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/17.jpeg" alt="Mfesane Secondary School – exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/18.jpeg" alt="Mfesane Secondary School – site overview" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/19.jpeg" alt="Mfesane Secondary School – building" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/20.jpeg" alt="Mfesane Secondary School – finished facade" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mfesane/21.jpeg" alt="Mfesane Secondary School – completed project" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LOWER UMFOLOZI ===== -->
+    <section id="umfolozi" class="section" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Public Sector</span>
+          <h2>Lower Umfolozi Social Development Offices</h2>
+          <p>Upgrade and additions to social development offices.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/1.jpeg" alt="Lower Umfolozi – office upgrade" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/2.jpeg" alt="Lower Umfolozi – construction works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/3.jpeg" alt="Lower Umfolozi – building additions" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/4.jpeg" alt="Lower Umfolozi – site progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/5.jpeg" alt="Lower Umfolozi – upgrade detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/6.jpeg" alt="Lower Umfolozi – construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/7.jpeg" alt="Lower Umfolozi – office block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/8.jpeg" alt="Lower Umfolozi – site view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/9.jpeg" alt="Lower Umfolozi – works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/10.jpeg" alt="Lower Umfolozi – progress update" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/11.jpeg" alt="Lower Umfolozi – upgrade work" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/12.jpeg" alt="Lower Umfolozi – construction phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/13.jpeg" alt="Lower Umfolozi – building detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/14.jpeg" alt="Lower Umfolozi – site works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/15.jpeg" alt="Lower Umfolozi – final touches" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/16.jpeg" alt="Lower Umfolozi – completed addition" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/17.jpeg" alt="Lower Umfolozi – exterior view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/18.jpeg" alt="Lower Umfolozi – office entrance" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/umfolozi/19.jpeg" alt="Lower Umfolozi – finished upgrade" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BLUE DOWNS HOUSING ===== -->
+    <section id="bluedowns" class="section section-soft" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Building</span>
+          <h2>Blue Downs Forest Village Housing</h2>
+          <p>Construction of 89 housing units.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/1.jpeg" alt="Blue Downs housing – unit construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/2.jpeg" alt="Blue Downs housing – site progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/3.jpeg" alt="Blue Downs housing – building works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/4.jpeg" alt="Blue Downs housing – units under construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/5.jpeg" alt="Blue Downs housing – structure" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/6.jpeg" alt="Blue Downs housing – construction detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/7.jpeg" alt="Blue Downs housing – roofing" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/8.jpeg" alt="Blue Downs housing – completed unit" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/9.jpeg" alt="Blue Downs housing – site view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/10.jpeg" alt="Blue Downs housing – unit exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/11.jpeg" alt="Blue Downs housing – construction progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/12.jpeg" alt="Blue Downs housing – units" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/13.jpeg" alt="Blue Downs housing – site detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/14.jpeg" alt="Blue Downs housing – building phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/15.jpeg" alt="Blue Downs housing – finished units" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/16.jpeg" alt="Blue Downs housing – street view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/17.jpeg" alt="Blue Downs housing – project overview" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/18.jpeg" alt="Blue Downs housing – final phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/19.jpeg" alt="Blue Downs housing – completed home" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/20.jpeg" alt="Blue Downs housing – neighbourhood" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/21.jpeg" alt="Blue Downs housing – completed unit" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/22.jpeg" alt="Blue Downs housing – exterior view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/bluedowns/23.jpeg" alt="Blue Downs housing – project completion" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ORCHARDS SWITCHING STATIONS ===== -->
+    <section id="orchards" class="section" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Infrastructure</span>
+          <h2>Orchards &amp; Hill Campus Switching Stations</h2>
+          <p>Construction of switching stations.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/1.jpeg" alt="Orchards switching station – construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/2.jpeg" alt="Orchards switching station – civil works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/3.jpeg" alt="Orchards switching station – progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/4.jpeg" alt="Orchards switching station – structure" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/5.jpeg" alt="Orchards switching station – site detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/6.jpeg" alt="Orchards switching station – construction phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/7.jpeg" alt="Orchards switching station – finishing works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/orchards/8.jpeg" alt="Orchards switching station – completed" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MOKIBE PRIMARY SCHOOL ===== -->
+    <section id="mokibe" class="section section-soft" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Building</span>
+          <h2>Mokibe Primary School</h2>
+          <p>Construction of primary school facilities in Witbank, Mpumalanga.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/1.jpeg" alt="Mokibe Primary School – construction start" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/2.jpeg" alt="Mokibe Primary School – site works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/3.jpeg" alt="Mokibe Primary School – foundation" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/4.jpeg" alt="Mokibe Primary School – building progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/5.jpeg" alt="Mokibe Primary School – classroom block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/6.jpeg" alt="Mokibe Primary School – structure" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/7.jpeg" alt="Mokibe Primary School – construction detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/8.jpeg" alt="Mokibe Primary School – roofing works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/9.jpeg" alt="Mokibe Primary School – exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/10.jpeg" alt="Mokibe Primary School – site view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/11.jpeg" alt="Mokibe Primary School – building works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/12.jpeg" alt="Mokibe Primary School – progress update" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/13.jpeg" alt="Mokibe Primary School – construction phase" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/14.jpeg" alt="Mokibe Primary School – building detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/15.jpeg" alt="Mokibe Primary School – classrooms" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/16.jpeg" alt="Mokibe Primary School – finished block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/17.jpeg" alt="Mokibe Primary School – exterior view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/18.jpeg" alt="Mokibe Primary School – site overview" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/19.jpeg" alt="Mokibe Primary School – completed works" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/20.jpeg" alt="Mokibe Primary School – school building" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/21.jpeg" alt="Mokibe Primary School – final exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/22.jpeg" alt="Mokibe Primary School – completed facility" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/23.jpeg" alt="Mokibe Primary School – project view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/24.jpeg" alt="Mokibe Primary School – entrance" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/25.jpeg" alt="Mokibe Primary School – school grounds" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/26.jpeg" alt="Mokibe Primary School – building exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/27.jpeg" alt="Mokibe Primary School – facility" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/28.jpeg" alt="Mokibe Primary School – completed project" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/29.jpeg" alt="Mokibe Primary School – school view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/30.jpeg" alt="Mokibe Primary School – construction detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/31.jpeg" alt="Mokibe Primary School – classroom exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/32.jpeg" alt="Mokibe Primary School – finished school" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/33.jpeg" alt="Mokibe Primary School – overall view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/34.jpeg" alt="Mokibe Primary School – construction" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/35.jpeg" alt="Mokibe Primary School – site progress" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/36.jpeg" alt="Mokibe Primary School – building" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/37.jpeg" alt="Mokibe Primary School – exterior detail" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/38.jpeg" alt="Mokibe Primary School – completed facility" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/39.jpeg" alt="Mokibe Primary School – school exterior" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/40.jpeg" alt="Mokibe Primary School – final project" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/41.jpeg" alt="Mokibe Primary School – completed block" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/42.jpeg" alt="Mokibe Primary School – facility view" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/43.jpeg" alt="Mokibe Primary School – school entrance" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+          <div class="gallery-item" onclick="openLightbox(this.querySelector('img').src, this.closest('.gallery-grid'))"><img src="assets/images/mokibe/44.jpeg" alt="Mokibe Primary School – finished building" loading="lazy"><div class="gallery-icon"><i class="fas fa-search-plus"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENKULULEKWENI PRIMARY SCHOOL ===== -->
+    <section id="enkululekweni" class="section" data-aos="fade-up" data-aos-duration="750">
+      <div class="container">
+        <div class="section-head">
+          <span class="project-badge">Building</span>
+          <h2>Enkululekweni Primary School</h2>
+          <p>Construction of primary school facilities.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid1.mp4')"><video src="assets/images/enkululekweni/vid1.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid2.mp4')"><video src="assets/images/enkululekweni/vid2.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid3.mp4')"><video src="assets/images/enkululekweni/vid3.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid4.mp4')"><video src="assets/images/enkululekweni/vid4.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid5.mp4')"><video src="assets/images/enkululekweni/vid5.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+          <div class="gallery-item" onclick="openVideo('assets/images/enkululekweni/vid6.mp4')"><video src="assets/images/enkululekweni/vid6.mp4" preload="metadata"></video><div class="gallery-icon"><i class="fas fa-play-circle"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GENERAL IMAGE GALLERY SECTION ===== -->
+    <section class="section section-soft" data-aos="fade-up" data-aos-duration="750">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Photo showcase</span>
-          <h2>Projects in pictures</h2>
+          <h2>General Projects in pictures</h2>
           <p>Browse the visual categories below.</p>
         </div>
 
@@ -751,8 +994,8 @@
       </div>
     </section>
 
-    <!-- ===== VIDEO GALLERY SECTION ===== -->
-    <section class="section section-soft" data-aos="fade-up" data-aos-duration="750">
+    <!-- ===== GENERAL VIDEO GALLERY SECTION ===== -->
+    <section class="section" data-aos="fade-up" data-aos-duration="750">
       <div class="container">
         <div class="section-head">
           <span class="eyebrow">Video showcase</span>
@@ -858,7 +1101,6 @@
               <p>General overview of ongoing work.</p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
@@ -920,7 +1162,7 @@
     </div>
   </footer>
 
-   <!-- ===== SCRIPTS ===== -->
+  <!-- ===== SCRIPTS ===== -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -952,11 +1194,100 @@
       overlay?.addEventListener('click', closeMenu);
       document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 
-      // ===== GALLERY PAGINATION LOGIC =====
-      
-      // Array of all gallery images. 
-      // Reordered: Action shots (13-87) first, team member photos (1-12) last.
+      // AOS init
+      if (typeof AOS !== 'undefined') {
+        AOS.init({ once: true, duration: 750, offset: 60 });
+      }
+
+      // ===== LIGHTBOX FUNCTIONALITY =====
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxClose = document.getElementById('lightbox-close');
+      const lightboxPrev = document.getElementById('lightbox-prev');
+      const lightboxNext = document.getElementById('lightbox-next');
+      const lightboxCounter = document.getElementById('lightbox-counter');
+      let lightboxImages = [];
+      let lightboxIndex = 0;
+
+      function openLightbox(src, grid) {
+        const imgs = Array.from(grid.querySelectorAll('.gallery-item img')).map(img => img.src);
+        lightboxImages = imgs;
+        lightboxIndex = imgs.indexOf(src);
+        if (lightboxIndex === -1) lightboxIndex = 0;
+        updateLightbox();
+        lightbox.classList.add('show');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function openVideo(src) {
+        const w = window.open('', '_blank');
+        w.document.write(`<title>Video</title><body style="margin:0;background:#000;display:flex;align-items:center;justify-content:center;height:100vh;"><video src="${src}" controls autoplay style="max-width:100%;max-height:100%;"></video></body>`);
+      }
+
+      function updateLightbox() {
+        if (lightboxImages.length === 0) return;
+        lightboxImg.src = lightboxImages[lightboxIndex];
+        lightboxCounter.textContent = (lightboxIndex + 1) + ' / ' + lightboxImages.length;
+        lightboxPrev.style.display = lightboxIndex === 0 ? 'none' : 'flex';
+        lightboxNext.style.display = lightboxIndex === lightboxImages.length - 1 ? 'none' : 'flex';
+      }
+
+      lightboxClose?.addEventListener('click', () => {
+        lightbox.classList.remove('show');
+        document.body.style.overflow = '';
+      });
+
+      lightbox?.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+          lightbox.classList.remove('show');
+          document.body.style.overflow = '';
+        }
+      });
+
+      lightboxPrev?.addEventListener('click', () => {
+        if (lightboxIndex > 0) {
+          lightboxIndex--;
+          updateLightbox();
+        }
+      });
+
+      lightboxNext?.addEventListener('click', () => {
+        if (lightboxIndex < lightboxImages.length - 1) {
+          lightboxIndex++;
+          updateLightbox();
+        }
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('show')) return;
+        if (e.key === 'Escape') {
+          lightbox.classList.remove('show');
+          document.body.style.overflow = '';
+        }
+        if (e.key === 'ArrowLeft' && lightboxIndex > 0) {
+          lightboxIndex--;
+          updateLightbox();
+        }
+        if (e.key === 'ArrowRight' && lightboxIndex < lightboxImages.length - 1) {
+          lightboxIndex++;
+          updateLightbox();
+        }
+      });
+
+      // ===== GENERAL PAGINATED GALLERY LOGIC =====
       const allImages = [
+        { src: 'assets/images/gallery/gallery (1).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (2).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (3).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (4).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (5).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (6).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (7).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (8).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (9).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (10).jpeg', category: 'civil' },
+        { src: 'assets/images/gallery/gallery (11).jpeg', category: 'building' },
+        { src: 'assets/images/gallery/gallery (12).jpeg', category: 'civil' },
         { src: 'assets/images/gallery/gallery (13).jpeg', category: 'civil' },
         { src: 'assets/images/gallery/gallery (14).jpeg', category: 'civil' },
         { src: 'assets/images/gallery/gallery (15).jpeg', category: 'civil' },
@@ -1022,20 +1353,7 @@
         { src: 'assets/images/gallery/gallery (84).jpeg', category: 'civil' },
         { src: 'assets/images/gallery/gallery (85).jpeg', category: 'building' },
         { src: 'assets/images/gallery/gallery (86).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (87).jpeg', category: 'civil' },
-        // Team member photos moved to the end
-        { src: 'assets/images/gallery/gallery (1).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (2).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (3).jpeg', category: 'civil' },
-        { src: 'assets/images/gallery/gallery (4).jpeg', category: 'civil' },
-        { src: 'assets/images/gallery/gallery (5).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (6).jpeg', category: 'civil' },
-        { src: 'assets/images/gallery/gallery (7).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (8).jpeg', category: 'civil' },
-        { src: 'assets/images/gallery/gallery (9).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (10).jpeg', category: 'civil' },
-        { src: 'assets/images/gallery/gallery (11).jpeg', category: 'building' },
-        { src: 'assets/images/gallery/gallery (12).jpeg', category: 'civil' }
+        { src: 'assets/images/gallery/gallery (87).jpeg', category: 'civil' }
       ];
 
       const grid = document.getElementById('gallery-grid');
@@ -1043,56 +1361,47 @@
       const filterBtns = document.querySelectorAll('.filter-btn');
 
       let currentPage = 1;
-      const itemsPerPage = 12; 
+      const itemsPerPage = 12;
       let currentFilter = 'all';
-      let currentPaginatedImages = []; // Keep track of currently visible images for lightbox
-
-      // Lightbox Elements
-      const lightbox = document.getElementById('lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxClose = document.getElementById('lightbox-close');
-      const lightboxPrev = document.getElementById('lightbox-prev');
-      const lightboxNext = document.getElementById('lightbox-next');
-      const lightboxCounter = document.getElementById('lightbox-counter');
-      let currentImageIndex = 0;
+      let currentPaginatedImages = [];
 
       function renderGallery() {
-        const filteredImages = currentFilter === 'all' 
-          ? allImages 
+        const filteredImages = currentFilter === 'all'
+          ? allImages
           : allImages.filter(img => img.category === currentFilter);
 
         const totalItems = filteredImages.length;
         const totalPages = Math.ceil(totalItems / itemsPerPage);
-        
+
         if (currentPage > totalPages) currentPage = totalPages || 1;
-        
+
         const startIndex = (currentPage - 1) * itemsPerPage;
         const endIndex = startIndex + itemsPerPage;
-        
+
         currentPaginatedImages = filteredImages.slice(startIndex, endIndex);
 
         grid.innerHTML = '';
         if (currentPaginatedImages.length === 0) {
           grid.innerHTML = '<p style="grid-column: 1 / -1; text-align: center; color: var(--muted);">No images found for this category.</p>';
         } else {
-          currentPaginatedImages.forEach((imgObj, index) => {
+          currentPaginatedImages.forEach((imgObj) => {
             const div = document.createElement('div');
             div.className = 'gallery-item';
             div.innerHTML = `
-              <img src="${imgObj.src}" alt="Project gallery image" loading="lazy">
+              <img src="${imgObj.src}" alt="Pulo Innovation project gallery image" loading="lazy">
               <div class="gallery-icon"><i class="fas fa-search-plus"></i></div>
             `;
-            // Add click event to open lightbox
-            div.addEventListener('click', () => openLightbox(index));
+            div.addEventListener('click', () => openLightbox(imgObj.src, grid));
             grid.appendChild(div);
           });
         }
 
-        renderPagination(totalPages);
+        renderPagination(totalPages, filteredImages);
       }
 
-      function renderPagination(totalPages) {
+      function renderPagination(totalPages, filteredImages) {
         paginationContainer.innerHTML = '';
+
         if (totalPages <= 1) return;
 
         const prevBtn = document.createElement('button');
@@ -1103,19 +1412,17 @@
           if (currentPage > 1) {
             currentPage--;
             renderGallery();
-            scrollToTopOfGallery();
           }
         });
         paginationContainer.appendChild(prevBtn);
 
         for (let i = 1; i <= totalPages; i++) {
           const btn = document.createElement('button');
-          btn.className = `page-btn ${i === currentPage ? 'active' : ''}`;
+          btn.className = 'page-btn' + (i === currentPage ? ' active' : '');
           btn.textContent = i;
           btn.addEventListener('click', () => {
             currentPage = i;
             renderGallery();
-            scrollToTopOfGallery();
           });
           paginationContainer.appendChild(btn);
         }
@@ -1128,95 +1435,31 @@
           if (currentPage < totalPages) {
             currentPage++;
             renderGallery();
-            scrollToTopOfGallery();
           }
         });
         paginationContainer.appendChild(nextBtn);
       }
 
-      function scrollToTopOfGallery() {
-        const gallerySection = document.querySelector('.section');
-        gallerySection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-
-      // ===== LIGHTBOX LOGIC =====
-      function openLightbox(index) {
-        currentImageIndex = index;
-        updateLightboxImage();
-        lightbox.classList.add('show');
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
-      }
-
-      function closeLightbox() {
-        lightbox.classList.remove('show');
-        document.body.style.overflow = ''; // Restore scrolling
-      }
-
-      function updateLightboxImage() {
-        if (currentPaginatedImages.length === 0) return;
-        
-        const imgObj = currentPaginatedImages[currentImageIndex];
-        lightboxImg.src = imgObj.src;
-        lightboxCounter.textContent = `${currentImageIndex + 1} / ${currentPaginatedImages.length}`;
-        
-        // Disable buttons if only one image
-        lightboxPrev.style.display = currentPaginatedImages.length > 1 ? 'flex' : 'none';
-        lightboxNext.style.display = currentPaginatedImages.length > 1 ? 'flex' : 'none';
-      }
-
-      function nextImage() {
-        if (currentPaginatedImages.length <= 1) return;
-        currentImageIndex = (currentImageIndex + 1) % currentPaginatedImages.length;
-        updateLightboxImage();
-      }
-
-      function prevImage() {
-        if (currentPaginatedImages.length <= 1) return;
-        currentImageIndex = (currentImageIndex - 1 + currentPaginatedImages.length) % currentPaginatedImages.length;
-        updateLightboxImage();
-      }
-
-      // Lightbox Event Listeners
-      lightboxClose.addEventListener('click', closeLightbox);
-      lightboxNext.addEventListener('click', nextImage);
-      lightboxPrev.addEventListener('click', prevImage);
-
-      // Close on background click
-      lightbox.addEventListener('click', (e) => {
-        if (e.target === lightbox) closeLightbox();
-      });
-
-      // Keyboard navigation
-      document.addEventListener('keydown', (e) => {
-        if (!lightbox.classList.contains('show')) return;
-        
-        if (e.key === 'ArrowRight') nextImage();
-        if (e.key === 'ArrowLeft') prevImage();
-        if (e.key === 'Escape') closeLightbox();
-      });
-
-      // Filter button click logic
       filterBtns.forEach(btn => {
         btn.addEventListener('click', () => {
           filterBtns.forEach(b => b.classList.remove('active'));
           btn.classList.add('active');
           currentFilter = btn.dataset.filter;
-          currentPage = 1; 
+          currentPage = 1;
           renderGallery();
         });
       });
 
-      // Initial render
       renderGallery();
 
-      // AOS init
-      if (window.AOS) {
-        AOS.init({ duration: 750, easing: 'ease-out-cubic', once: true, offset: 70 });
-      }
-    });
+      // ===== MAKE FUNCTIONS GLOBALLY AVAILABLE FOR INLINE HANDLERS =====
+      window.openLightbox = openLightbox;
+      window.openVideo = openVideo;
 
-    // Footer year
-    document.getElementById('year').textContent = new Date().getFullYear();
+      // ===== YEAR =====
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+    });
   </script>
 </body>
 </html>
